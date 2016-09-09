@@ -16,7 +16,7 @@ var macCount;
 var breadCount;
 var thaiCount;
 var bobaCount;
-var frapCount;let spaghettiSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            trace("Value is: " + this.data.value + "\n");
+var frapCount;let spaghettiSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {
             spaghettiCount.string = this.data.value.toString();
             spaghettiCalorie.string = (this.data.value*600).toString();
             
@@ -42,7 +42,7 @@ var frapCount;let spaghettiSlider = HorizontalSlider.template($ => ({    heig
     }}));let sliderContainer1 = new Container({    left: -60, right: 110, top: -190, bottom: 0,    contents: [        new spaghettiSlider({ min: 0, max: 100, value: 0 })    ],
 });application.add(sliderContainer1);
 
-let bananaSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            trace("Value is: " + this.data.value + "\n");
+let bananaSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {
             bananaCount.string = this.data.value.toString();
             bananaCalorie.string = (this.data.value*105).toString();
             
@@ -66,7 +66,7 @@ let bananaSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, r
 let sliderContainer2 = new Container({    left: -60, right: 110, top: -125, bottom: 0,    contents: [        new bananaSlider({ min: 0, max: 100, value: 0 })    ]});application.add(sliderContainer2);
 
 
-let macSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            trace("Value is: " + this.data.value + "\n");
+let macSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {
             macCount.string = this.data.value.toString();
             macCalorie.string = (this.data.value*563).toString();
             
@@ -89,7 +89,7 @@ let macSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, righ
 let sliderContainer3 = new Container({    left: -60, right: 110, top: -55, bottom: 0,    contents: [        new macSlider({ min: 0, max: 100, value: 0 })    ]});application.add(sliderContainer3);
 
 
-let breadSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            trace("Value is: " + this.data.value + "\n");            breadCount.string = this.data.value.toString();
+let breadSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            breadCount.string = this.data.value.toString();
             breadCalorie.string = (this.data.value*79).toString();
                     	macCalorie.string = (this.data.value*79).toString();
         	bananaCalorie.string = (this.data.value*79).toString();
@@ -107,7 +107,7 @@ let breadSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, ri
 
 let sliderContainer4 = new Container({    left: -60, right: 110, top: 15, bottom: 0,    contents: [        new breadSlider({ min: 0, max: 100, value: 0 })    ]});application.add(sliderContainer4);
 
-let thaiSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            trace("Value is: " + this.data.value + "\n");            thaiCount.string = this.data.value.toString();
+let thaiSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            thaiCount.string = this.data.value.toString();
             thaiCalorie.string = (this.data.value*889).toString();
                     	breadCalorie.string = (this.data.value*889).toString();        	macCalorie.string = (this.data.value*889).toString();
         	bananaCalorie.string = (this.data.value*889).toString();
@@ -124,7 +124,7 @@ let thaiSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, rig
 
 let sliderContainer5 = new Container({    left: -60, right: 110, top: 85, bottom: 0,    contents: [        new thaiSlider({ min: 0, max: 100, value: 0 })    ]});application.add(sliderContainer5);
 
-let bobaSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            trace("Value is: " + this.data.value + "\n");            bobaCount.string = this.data.value.toString();
+let bobaSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {            bobaCount.string = this.data.value.toString();
             bobaCalorie.string = (this.data.value*316).toString();
                     	breadCalorie.string = (this.data.value*316).toString();          	macCalorie.string = (this.data.value*316).toString();        	bananaCalorie.string = (this.data.value*316).toString();        	spaghettiCalorie.string = (this.data.value*316).toString();        	thaiCalorie.string = (this.data.value*316).toString();        	frapCalorie.string = (this.data.value*316).toString();
         	
@@ -137,7 +137,7 @@ let bobaSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, rig
 
 let sliderContainer6 = new Container({    left: -60, right: 110, top:160, bottom: 0,    contents: [        new bobaSlider({ min: 0, max: 100, value: 0 })    ]});application.add(sliderContainer6);
 
-let frapSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {	            trace("Value is: " + this.data.value + "\n");            frapCount.string = this.data.value.toString();
+let frapSlider = HorizontalSlider.template($ => ({    height: 50, left: 70, right: 70,    Behavior: class extends HorizontalSliderBehavior {        onValueChanged(container) {	            frapCount.string = this.data.value.toString();
             frapCalorie.string = (this.data.value*420).toString();
                     	bobaCalorie.string = (this.data.value*420).toString();        	breadCalorie.string = (this.data.value*420).toString();          	macCalorie.string = (this.data.value*420).toString();        	bananaCalorie.string = (this.data.value*420).toString();        	spaghettiCalorie.string = (this.data.value*420).toString();        	thaiCalorie.string = (this.data.value*420).toString();
         	
